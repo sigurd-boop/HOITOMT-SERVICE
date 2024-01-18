@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+
+.text-funny-font {
+  font-family: 'Fredoka One', cursive;
+  /* You can add other styling properties here if needed */
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.spinning-favicon {
+  display: inline-block;
+  animation: spin 2s linear infinite; /* Loop the animation indefinitely */
+}
+
+img {
+  width: 16px; /* Adjust the size as needed */
+  height: 16px;
+}
